@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Principal - KunFuPanda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/LogoFilmFever.png" alt="KunFuPanda Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section1">Video Introductorio</a></li>
+                <li><a href="#section2">Galeria de Fotos</a></li>
+                <li><a href="#section3">Reseñas</a></li>
+                <li><a href="#section4">Opiniones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <div class="video-overlay">
+            <video autoplay muted loop id="bg-video">
+                <source src="video/Intro - Kun Fu Panda.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="text-overlay">
+            <h1>KUN FU PANDA</h1>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="gallery">
+            <h2>Galería de Fotos</h2>
+            <div class="photo-grid">
+                <!-- Aquí van las imágenes -->
+                <div class="photo">
+                    <img src="images/panda1.jpg" alt="Imagen 1">
+                </div>
+                <div class="photo">
+                    <img src="images/panda2.jpg" alt="Imagen 2">
+                </div>
+                <div class="photo" >
+                    <img src="images/panda3.jpg" alt="Imagen 3">
+                </div>
+                <div class="photo">
+                    <img src="images/panda4.jpg" alt="Imagen 4">
+                </div>
+                <div class="photo">
+                    <img src="images/panda5.jpg" alt="Imagen 5">
+                </div>
+                <div class="photo">
+                    <img src="images/panda6.jpg" alt="Imagen 6">
+                </div>
+                <div class="photo">
+                    <img src="images/panda7.jpg" alt="Imagen 7">
+                </div>
+                <div class="photo">
+                    <img src="images/panda8.jpg" alt="Imagen 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="section3">
+        <h2>Reseñas de Películas</h2>
+        <div class="review-container">
+            <div class="review left">
+                <img src="images/pandapart1.jpg" alt="Kung Fu Panda 1" onclick="showTrailer('https://www.youtube.com/embed/vRhMIpFu-Zw?si=Xk53X4MMXQZUQqQk')">
+                <div class="review-content">
+                    <p>Trailer!!<strong>Presione la imagen</strong></p>
+                    <h3>Kung Fu Panda 1</h3>
+                    <div class="details">
+                        <p><strong>Fecha de lanzamiento:</strong> 2008</p>
+                        <p><strong>Director:</strong> Mark Osborne, John Stevenson</p>
+                    </div>
+                    <div class="ranking">
+                        <span>Ranking: 7.6/10</span>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;&#9734;
+                        </div>
+                    </div>
+                    <p>
+                        El protagonista es un oso panda llamado Po, el más vago de todas las criaturas 
+                        del Valle de la Paz. Con poderosos enemigos acercándose, la esperanza es depositada 
+                        en una antigua profecía que dice que un héroe se alzará para salvarles. Voces originales 
+                        de Jack Black, Angelina Jolie, Dustin Hoffman, Lucy Liu & Jackie Chan.
+                    </p>
+                </div>
+            </div>
+            <div class="review right">
+                <img src="images/pandapart2.jpg" alt="Kung Fu Panda 2" onclick="showTrailer('https://www.youtube.com/embed/KgdjmdZE2uI?si=2BqfaKXivazCxSoK')">
+                <div class="review-content">
+                    <p>Trailer!!<strong>Presione la imagen</strong></p>
+                    <h3>Kung Fu Panda 2</h3>
+                    <div class="details">
+                        <p><strong>Fecha de lanzamiento:</strong> 2011</p>
+                        <p><strong>Director:</strong> Jennifer Yuh Nelson</p>
+                    </div>
+                    <div class="ranking">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>Ranking: 7.3/10</span>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;&#9734;
+                        </div>
+                    </div>
+                    <p>
+                        Po está ahora viviendo su sueño como el Guerrero del Dragón, 
+                        protegiendo el Valle de la Paz junto a sus amigos y sus compañeros 
+                        maestros del kung fu. Los Cinco Furiosos. Pero su nueva e impresionante 
+                        vida se encuentra amenazada por la aparición de un villano formidable, que 
+                        planea usar un arma secreta imparable para conquistar China y destruir el kung fu.
+                    </p>
+                </div>
+            </div>
+            <div class="review left">
+                <img src="images/pandapart3.jpg" alt="Kung Fu Panda 3" onclick="showTrailer('https://www.youtube.com/embed/xADC5FrVeTs?si=l6x5LCeF_q_ccHa-')">
+                <div class="review-content">
+                    <p>Trailer!!<strong>Presione la imagen</strong></p>
+                    <h3>Kung Fu Panda 3</h3>
+                    <div class="details">
+                        <p><strong>Fecha de lanzamiento:</strong> 2016</p>
+                        <p><strong>Director:</strong> Jennifer Yuh Nelson, Alessandro Carloni</p>
+                    </div>
+                    <div class="ranking">
+                        <span>Ranking: 7.1/10</span>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;&#9734;
+                        </div>
+                    </div>
+                    <p>
+                        Vive las aventuras de Po, un oso panda experto en artes marciales, su maestro Shifu 
+                        y sus amigos. Todos ellos protegerán el Valle de la Paz de cualquier amenaza
+                    </p>
+                </div>
+            </div>
+            <div class="review right">
+                <img src="images/pandapart4.jpg" alt="Kung Fu Panda 4" class="movie-thumbnail" onclick="showTrailer('https://www.youtube.com/embed/kg3Q63gzF6I?si=zFBaOIQ-IvzSUCs-')">
+                <div class="review-content">
+                    <p>Trailer!!<strong>Presione la imagen</strong></p>
+                    <h3>Kung Fu Panda 4</h3>
+                    <div class="details">
+                        <p><strong>Fecha de lanzamiento:</strong> 2024</p>
+                        <p><strong>Director:</strong> Mike Mitchell, Stephanie Stine</p>
+                    </div>
+                    <div class="ranking">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span>Ranking: 6.3/10</span>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;&#9734;&#9734;
+                        </div>
+                    </div>
+                    <p>
+                        Ocho años después de la última aventura de Po, 
+                        las esperanzas eran altas para lo que kung fu panda 4 ofrecería. 
+                        La configuración de Po convirtiéndose cada vez más en un líder, 
+                        la búsqueda de un nuevo Guerrero Dragón y la lucha contra un villano en 
+                        The Chameleon que podría parecerse y tener las habilidades de kung fu de villanos 
+                        anteriores, todo sonaba genial.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Pop-up para el tráiler de YouTube -->
+        <div id="trailer-popup" class="trailer-popup">
+            <div class="popup-content">
+                <span class="close" onclick="closeTrailer()">&times;</span>
+                <iframe id="trailer-frame" width="860" height="615" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="section4">
+        <h2>Opiniones de los Espectadores</h2>
+        <div class="opinions-container">
+            <div class="opinion">
+                <img src="images/persona1.jpg" alt="Persona 1">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 1</h3>
+                    <p>¡Kung Fu Panda es una película increíble! Los personajes son adorables y la acción es emocionante.</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/persona2.jpg" alt="Persona 2">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 2</h3>
+                    <p>Me encantó la animación y la historia. Definitivamente una película para ver con la familia.</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/persona3.jpg" alt="Persona 3">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 3</h3>
+                    <p>Una mezcla perfecta de comedia y acción. ¡Muy recomendable!</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/persona4.jpg" alt="Persona 4">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 4</h3>
+                    <p>Las lecciones de vida y los valores que enseña la película son impresionantes.</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/persona5.jpg" alt="Persona 5">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 5</h3>
+                    <p>Po es el mejor panda de todos. La serie de películas nunca decepciona.</p>
+                </div>
+            </div>
+            <div class="opinion">
+                <img src="images/persona6.jpg" alt="Persona 6">
+                <div class="opinion-content">
+                    <h3>Nombre de Persona 6</h3>
+                    <p>Los efectos visuales y la banda sonora son espectaculares. Una obra maestra animada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer id="footer">
+        <p>&copy; 2024 KunFuPanda. Todos los derechos reservados.</p>
+    </footer>
+
+
+    
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

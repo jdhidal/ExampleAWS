@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+header .logo span {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arimo';
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#section1 {
+    position: relative;
+    height: 70vh; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Opaca el video con un fondo negro semi-transparente */
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Hace el video un poco opaco */
+}
+
+.text-overlay {
+    position: absolute;
+    z-index: 1;
+}
+
+.text-overlay h1 {
+    color: #FF6600;
+    font-size: 10em;
+    margin: 0;
+    font-family: 'Bebas Neue';
+}
+
+/* Estilos para la galería de fotos */
+
+#section2 {
+    background-color: rgba(155, 118, 49, 0.5); /* Color de fondo para la sección */
+    padding: 2em 0; /* Espaciado interno de la sección */
+    text-align: center; /* Alineación centrada para el contenido */
+}
+
+.gallery {
+    max-width: 100%; /* Ancho máximo para el contenedor de la galería */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 0 8px; /* Espaciado interno del contenedor */
+}
+
+.gallery h2 {
+    font-size: 3em; /* Tamaño de fuente para el título */
+    font-family: 'Bebas Neue';
+    margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+.photo-grid {
+    display: grid; /* Utilizar el sistema de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas por fila */
+    gap: 20px; /* Espacio entre las fotos */
+    max-width: 1500px; /* Ancho máximo de la cuadrícula */
+    margin: 0 auto; /* Centrar la cuadrícula en la página */
+}
+
+.photo {
+    overflow: hidden; /* Ocultar el desbordamiento de las imágenes */
+    border-radius: 8px; /* Borde redondeado para las fotos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.photo img {
+    width: 100%; /* Establecer el ancho al 100% del contenedor */
+    height: 100%; /* Mantener la proporción de la imagen */
+    display: block; /* Evitar espacios adicionales debajo de la imagen */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse */
+}
+
+
+/* Estilos para la sección de reseñas de películas */
+
+#section3 {
+    padding: 2em 0; /* Espaciado interno de la sección */
+    text-align: center; /* Alineación centrada para el contenido */
+    background-color: rgba(0, 0, 0, 0.05); /* Color de fondo claro */
+}
+
+#section3 h2 {
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+    font-family: 'Bebas Neue';
+    margin-bottom: 1em; /* Espacio inferior del título */
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las reseñas se ajusten en varias líneas */
+    justify-content: center; /* Centra las reseñas horizontalmente */
+    gap: 2em; /* Espacio entre las reseñas */
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Ancho máximo para las reseñas */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Oculta el desbordamiento del contenido */
+}
+
+.review.left {
+    order: 1;
+}
+
+.review.right {
+    order: 2;
+}
+
+.review:nth-child(3) {
+    order: 3;
+}
+
+.review:nth-child(4) {
+    order: 4;
+}
+
+.review img {
+    width: 100%; /* Establecer el ancho al 100% del contenedor */
+    height: 550px; /* Establecer una altura fija */
+    object-fit: cover; /* Asegurarse de que la imagen mantenga su proporción */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    cursor: pointer;
+}
+
+.review:hover img {
+    transform: scale(1.1); /* Agrandar la imagen al pasar el mouse */
+}
+
+.review-content {
+    padding: 1em;
+}
+
+.review h3 {
+    font-size: 1.5em; /* Tamaño de fuente para el título de la película */
+    font-family: 'Bebas Neue';
+    margin: 0.5em 0; /* Espacio alrededor del título */
+}
+
+.details p {
+    font-size: 1em; /* Tamaño de fuente para los detalles */
+    font-family: 'Arimo';
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin: 0.2em 0; /* Margen alrededor del texto */
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5em; /* Espacio inferior de la sección de ranking */
+}
+
+.ranking span {
+    font-size: 1.2em; /* Tamaño de fuente para el ranking */
+    font-family: 'Arimo';
+    margin-bottom: 0.3em; /* Espacio inferior del texto del ranking */
+}
+
+.stars {
+    font-size: 1.5em; /* Tamaño de fuente para las estrellas */
+    color: gold;
+}
+
+.review p {
+    font-size: 1em; /* Tamaño de fuente para la descripción */
+    font-family: 'Arimo';
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Estilos para el pop-up */
+.trailer-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    position: relative;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 1px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .review {
+        max-width: 100%; /* Ancho máximo para pantallas pequeñas */
+    }
+}
+
+
+/* Estilos para la sección de opiniones de los espectadores */
+
+#section4 {
+    padding: 2em 0; /* Espaciado interno de la sección */
+    text-align: center; /* Alineación centrada para el contenido */
+    background-color: rgb(255, 166, 0, 0.2); /* Color de fondo claro */
+}
+
+#section4 h2 {
+    font-size: 2.5em; /* Tamaño de fuente para el título */
+    font-family: 'Bebas Neue';
+    margin-bottom: 1em; /* Espacio inferior del título */
+}
+
+.opinions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+    gap: 20px; /* Espacio entre las opiniones */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+.opinion {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid orange; /* Añadir borde */
+    overflow: hidden; /* Ocultar el desbordamiento del contenido */
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinion img {
+    width: 100px; /* Tamaño de la imagen */
+    height: 100px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Imagen circular */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    margin-bottom: 1em; /* Espacio inferior de la imagen */
+}
+
+.opinion-content {
+    text-align: center;
+}
+
+.opinion h3 {
+    font-size: 1.2em; /* Tamaño de fuente para el nombre */
+    font-family: 'Bebas Neue';
+    margin-bottom: 0.5em; /* Espacio inferior del nombre */
+}
+
+.opinion p {
+    font-size: 1em; /* Tamaño de fuente para el comentario */
+    font-family: 'Arimo';
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .opinions-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    .opinions-container {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arimo';
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
