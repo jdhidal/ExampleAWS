@@ -19,6 +19,6 @@ docker pull jdhidalgo673/my-html-app:latest
 ```
 
 ```bash
-docker run -d -p 8080:80 jdhidalgo673/my-html-app
+docker run -d -p 8080:80 --name my-html-app jdhidalgo673/my-html-app
 ```
 This will make the application available at http://localhost:8080
